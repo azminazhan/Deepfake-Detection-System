@@ -83,7 +83,7 @@ class ResNeXtLSTM(nn.Module):
 # ======== LOAD MODEL ==========
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = ResNeXtLSTM().to(device)
-state = torch.load(r"E:\Fyp\Resnetlstm\Finalmodel\Dropout_rate\0.0\best_model.pth", map_location=device, weights_only=False)
+state = torch.load("Resnetlstm/Finalmodel/Dropout_rate/0.0/best_model.pth", map_location=device, weights_only=False)
 model.load_state_dict(state, strict=True)
 model.eval()
 
