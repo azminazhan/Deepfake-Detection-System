@@ -23,8 +23,7 @@ MAX_MB      = 10
 MAX_SECS    = 60
 
 # ========== PAGE CONFIG & THEME ==========
-st.set_page_config(page_title="DeepFake Detection System", layout="wide")
-theme = st.sidebar.radio("Select theme:", ["Light","Dark"], index=0)
+st.set_page_config(page_title="DeepFake Detection System", layout="wide", initial_sidebar_state="collapsed")
 fake_thresh = st.sidebar.slider("Fake threshold (%)", 0, 100, 50)
 
 # Wallpaper background
