@@ -28,7 +28,7 @@ theme = st.sidebar.radio("Select theme:", ["Light","Dark"], index=0)
 fake_thresh = st.sidebar.slider("Fake threshold (%)", 0, 100, 50)
 
 # Wallpaper background
-wall = r"C:\Users\azmnl\Downloads\deep.avif"
+wall = "deep.avif"
 with open(wall, "rb") as f:
     b64 = base64.b64encode(f.read()).decode()
 st.markdown(f"""
